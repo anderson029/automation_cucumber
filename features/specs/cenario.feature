@@ -4,14 +4,16 @@
 Funcionalidade: Cálculo de subtração e soma. 
   - Eu como usuário quero fazer cálculo de subtração e soma.
 
-@positivo_sub
+Contexto: teste
+Dado eu tenha 10 laranjas
+
+
+@positivo_sub @smoke
 Cenário: Fazer subtração
-  Dado eu tenha 10 laranjas
   Quando eu como 2 laranjas
   Então eu vejo quantas laranjas sobraram
   
 @positivo_soma
 Cenário: Fazer soma
-  Dado eu tenha 10 laranjas
   Quando eu compro 5 laranjas
   Então eu vejo quantas laranjas eu tenho
